@@ -1,12 +1,20 @@
 {
-    "name": "murataygun/tckimlikdogrulama",
-    "description": "Türkiye Cumhuriyeti Kimlik Numarası Doğrulama / Republic of Turkey Identity Number Verification",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Murat AYGÜN",
-            "email": "info@murataygun.com"
-        }
-    ],
-    "require": {}
+  "name": "murataygun/tckimlikdogrulama",
+  "description": "Türkiye Cumhuriyeti Kimlik Numarası Doğrulama / Republic of Turkey Identity Number Verification",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Murat AYGÜN",
+      "email": "info@murataygun.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "murataygun\\": "src/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.1"
+  }
 }
