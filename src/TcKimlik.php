@@ -100,7 +100,7 @@ class TcKimlik
      * @param $string
      * @return string
      */
-    private function trUppercase($string)
+    private static function trUppercase($string)
     {
         $string = str_replace(array('i'), array('İ'), $string);
         return mb_convert_case($string, MB_CASE_UPPER, "UTF-8");
