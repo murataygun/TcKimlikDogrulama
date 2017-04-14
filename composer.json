@@ -1,0 +1,12 @@
+{
+    "name": "murataygun/tckimlikdogrulama",
+    "description": "Türkiye Cumhuriyeti Kimlik Numarası Doğrulama / Republic of Turkey Identity Number Verification",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Murat AYGÜN",
+            "email": "info@murataygun.com"
+        }
+    ],
+    "require": {}
+}
