@@ -9,11 +9,9 @@
 
 namespace murataygun;
 
-define('validationFields', ["tcNo", "name", "surName", "birthyear"]);
-
-
 class TcKimlik
 {
+    private static $validationFields = array("tcNo", "name", "surName", "birthyear");
 
     /**
      * @param $data
@@ -51,11 +49,11 @@ class TcKimlik
         if (!self::confirm($data))
             return false;
 
-        if (count(array_diff(validationFields, array_keys($data))) != 0) {
+        if (count(array_diff(self::$validationFields, array_keys($data))) != 0) {
             return false;
         }
         if ($auto_uppercase) {
-            foreach (validationFields as $field) {
+            foreach (self::$validationFields as $field) {
                 $data[$field] = self::trUppercase($data[$field]);
             }
         }
